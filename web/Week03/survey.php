@@ -1,10 +1,6 @@
 <?php
 session_start();
     
-if ($_SESSION["taken"] == "done") {
-    $results = "/CS313/Ponder/savefile.php";
-    header('Location: '. $results);
-}
 ?>
 <!doctype html>
 <html>
@@ -16,8 +12,8 @@ if ($_SESSION["taken"] == "done") {
         <nav>
             <ul>
                 <li><a href="https://www.instagram.com/sethoscope92/">Home</a></li>   
-                <li><a href="Assignments.html">Assignments</a></li>
-                <li><a href="#">About me</a></li>
+                <li><a href="/../Assignments.html">Assignments</a></li>
+                <li><a href="/../Week02/aboutme.html">About me</a></li>
             </ul>
         </nav>
         <h1>Survey | Portland Metro Area</h1><hr/>

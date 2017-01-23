@@ -67,8 +67,8 @@
     <nav>
         <ul>
             <li><a href="https://www.instagram.com/sethoscope92/">Home</a></li>   
-            <li><a href="Assignments.html">Assignments</a></li>
-            <li><a href="#">About me</a></li>
+            <li><a href="/../Assignments.html">Assignments</a></li>
+            <li><a href="/../Week02/aboutme.html">About me</a></li>
         </ul>
     </nav>
     <h2>Web Development Interest</h2>

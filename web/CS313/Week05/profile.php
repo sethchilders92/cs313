@@ -8,6 +8,8 @@ $statement = $db->prepare("SELECT firstname, lastname, description, id FROM prof
 $statement2 = $db->prepare("SELECT username, password, id FROM person WHERE username='sethchilders92'");
 $statement->execute();
 // Go through each result
+$row = $statement->fetch(PDO::FETCH_ASSOC);
+$row2 = $statement2->fetch(PDO::FETCH_ASSOC);
 //while ($row = $statement->fetch(PDO::FETCH_ASSOC))
 //{
 //	echo '<strong>' . $row['firstname'] . " " . $row['lastname'];

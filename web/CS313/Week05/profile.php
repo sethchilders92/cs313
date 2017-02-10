@@ -4,13 +4,19 @@ require "dbconnect.php";
 $db = get_db();
 
 if($_POST['name'] == 'Seth') {
-    $id = 1;
+    $id1 = 1;
 } else
-    $id = 2;
+    $id1 = 2;
 
-$statement = $db->prepare("SELECT firstname, lastname, description, id FROM profile WHERE id=$id");
-$statement2 = $db->prepare("SELECT username, password, id FROM person WHERE id=$id");
+$username = $_POST['username'];
+$password = $_POST['password'];
+
+$statement = $db->prepare("SELECT firstname, lastname, description, id FROM profile WHERE id=$id1");
+$statement2 = $db->prepare("if exists(SELECT username, password, id FROM person WHERE username=$username, password=$password");
+
+username=$username");
 $statement->execute();
+$statement2->execute();
 // Go through each result
 $row = $statement->fetch(PDO::FETCH_ASSOC);
 $row2 = $statement2->fetch(PDO::FETCH_ASSOC);  
@@ -27,7 +33,7 @@ $row2 = $statement2->fetch(PDO::FETCH_ASSOC);
             </title>
         <link type="text/css" rel="stylesheet" href="main.css"/>
     </head>
-    <body>
+    <body> 
        
         
         <div class="container">

@@ -1,0 +1,41 @@
+After completing the assignment, please answer the questions in this text file and submit it to I-Learn.
+
+1. Copy and paste the URL for your web application:
+https://sheltered-mountain-47766.herokuapp.com/CS313/Assignments.html
+
+2. Copy and paste the URL for your source code repository (e.g., GitHub):
+https://github.com/sethchilders92/cs313/tree/master/web/CS313
+
+3. Briefly list and describe the elements of the application that are functioning. Include any special instructions about how to login and/or use your application.
+    
+    Everything is working properly. This includes the PHP, form, Results link, and the 
+    submit button, along with the links to the assignment page, about me page, etc.
+
+4. Briefly describe any pieces of the assignment that are not yet working correctly.
+
+    Everything is working properly.
+
+5. Briefly describe the "coolest" thing you learned while completing this assignment.
+
+    The coolest thing I learned was using PHP to write JSON, then using PHP to parse the 
+    JSON again. This was a difficult, but powerful thing to learn.
+
+6. List one strength and one limitation of using cookies.
+    
+    Cookies can save data for users, such as passwords and usernames, but they do have
+    a max capacity per per domain that should be remembered, being 4096 bytes. This limit
+    to size makes it necessary to save files as well and create databases, not just saving the
+    cookies themselves.
+
+
+7. Please select the category you feel best describes your assignment:
+
+E - Shows creativity and excels above and beyond requirements
+
+8. Provide a brief justification (1-2 sentences) for selecting that category.
+
+    My assignment not only works, but I also made it user friendly by adding my standard 
+    navigation menu at the top of both my survey and my results page, making it easier to
+    navigate throughout my assignments. I also tried to make the color scheme well formed 
+    and used original CSS to style everything instead of using bootstrap or other third-party
+    styling.

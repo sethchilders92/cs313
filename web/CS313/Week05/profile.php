@@ -4,7 +4,7 @@ require "dbconnect.php";
 $db = get_db();
 ?>
  <?php
-if($_POST['name'] == 'Jon') {
+if($_POST['name'] == 'Seth') {
     $id = 2;
 } else
     $id = 1;

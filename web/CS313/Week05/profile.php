@@ -2,8 +2,7 @@
 /* Taken From Instructor Solution to Team Assignment Week 05*/
 require "dbconnect.php";
 $db = get_db();
-?>
- <?php
+
 if($_POST['name'] == 'Seth') {
     $id = 1;
 } else
@@ -41,7 +40,6 @@ $row2 = $statement2->fetch(PDO::FETCH_ASSOC);
             <h4>Description</h4>
             <p><?php 
                     echo $row['description'];
-                    echo $_POST['name'];
                 ?></p>
             </div>
         </div>

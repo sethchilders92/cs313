@@ -1,0 +1,10 @@
+.profilePic {
+    position: absolute;
+    top: 55px;   
+}
+.name {
+    position: absolute;
+    top: 235px;
+    left: 32%;
+    color: white;
+}

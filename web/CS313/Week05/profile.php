@@ -23,7 +23,7 @@ $row2 = $statement2->fetch(PDO::FETCH_ASSOC);
     <head>
         <title>
             <?php 
-                echo "General Profile | "$row['firstname'] . " " . $row['lastname'];
+                echo "General Profile | " . $row['firstname'] . " " . $row['lastname'];
             ?>
             </title>
         <link type="text/css" rel="stylesheet" href="main.css"/>

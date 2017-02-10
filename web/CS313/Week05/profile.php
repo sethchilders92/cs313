@@ -14,7 +14,6 @@ $password = $_POST['password'];
 $statement = $db->prepare("SELECT firstname, lastname, description, id FROM profile WHERE id=$id1");
 $statement2 = $db->prepare("if exists(SELECT username, password, id FROM person WHERE username=$username, password=$password");
 
-username=$username");
 $statement->execute();
 $statement2->execute();
 // Go through each result

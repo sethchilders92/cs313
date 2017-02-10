@@ -4,7 +4,7 @@ require "dbconnect.php";
 $db = get_db();
 ?>
  <?php
-if($_POST['Jon']) {
+if($_POST['name'] == 'Jon') {
     $id = 2;
 } else
     $id = 1;
@@ -43,8 +43,8 @@ $row2 = $statement2->fetch(PDO::FETCH_ASSOC);
                     echo $row['description'];
                 ?></p>
             <form method="post">
-            <input name="Jon" method="post" type="radio"/>Jonathan's Profile
-            <input name="Seth" method="post" type="radio"/>Seth's Profile
+            <input name="name" value="Jon" type="radio"/>Jonathan's Profile
+            <input name="name" value="Seth" type="radio"/>Seth's Profile
             </form>
             </div>
         </div>

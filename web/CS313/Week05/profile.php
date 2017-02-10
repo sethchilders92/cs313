@@ -5,9 +5,9 @@ $db = get_db();
 ?>
  <?php
 if($_POST['name'] == 'Seth') {
-    $id = 2;
-} else
     $id = 1;
+} else
+    $id = 2;
 
 $statement = $db->prepare("SELECT firstname, lastname, description, id FROM profile WHERE id=$id");
 $statement2 = $db->prepare("SELECT username, password, id FROM person WHERE id=$id");

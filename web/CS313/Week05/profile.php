@@ -43,10 +43,6 @@ $row2 = $statement2->fetch(PDO::FETCH_ASSOC);
                     echo $row['description'];
                     echo $_POST['name'];
                 ?></p>
-            <form method="post" action="">
-            <input name="name" value="Jon" type="radio"/>Jonathan's Profile
-            <input name="name" value="Seth" type="radio"/>Seth's Profile
-            </form>
             </div>
         </div>
     </body>

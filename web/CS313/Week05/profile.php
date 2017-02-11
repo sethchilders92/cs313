@@ -3,10 +3,10 @@
 require "dbconnect.php";
 $db = get_db();
 
-//if($_POST['username'] == 'sethchilders92') {
-//    $id = 1;
-//} else
-//    $id = 2;
+if($_POST['username'] == 'sethchilders92') {
+    $id = 1;
+} else
+    $id = 2;
 
 $username = $_POST['username'];
 $password = $_POST['password'];

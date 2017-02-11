@@ -14,7 +14,7 @@ $password = $_POST['password'];
 //echo "Username: $username";
 //echo "Password: $password";
 
-$row = "SELECT * FROM person WHERE username=$username";
+$row = "SELECT * FROM person WHERE username=$_POST['username']";
 
 $statement = $db->prepare($row);
 $statement->execute();

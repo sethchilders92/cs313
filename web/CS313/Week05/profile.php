@@ -27,11 +27,13 @@ $statement->closeCursor();
 
 $id = $row['id'];
 
-echo "ID: $id";
-//$sql = "SELECT * FROM profile WHERE id=$id";
-//$statement2 = $db->prepare($sql);
-//$statement2->execute();
-//$row2 = $statement2->fetch(PDO::FETCH_ASSOC);
+//echo "ID: $id";
+$sql = "SELECT * FROM profile WHERE id=$id";
+$statement2 = $db->prepare($sql);
+$statement2->bindValue(':id', $id);
+$statement2->execute();
+$row2 = $statement2->fetch(PDO::FETCH_ASSOC);
+$statement2->closeCursor();
 //echo "Here's the id: " . $id;
 
 ?>      

@@ -64,7 +64,9 @@ try {
                     echo $row2['description'];
                 ?></p>
             </div>
-            <input type="submit" action="editProfile.html" name="editProfile"/>
+            <form action="editProfile.html">
+                <input type="submit"  value="Edit Profile"/>
+            </form>
         </div>
     </body>
 </html>

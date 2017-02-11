@@ -36,7 +36,7 @@ $statement->execute();
     <head>
         <title>
             <?php 
-                echo "General Profile | " . $row2['firstname'] . " " . $row2['lastname'];
+//                echo "General Profile | " . $row2['firstname'] . " " . $row2['lastname'];
             ?>
             </title>
         <link type="text/css" rel="stylesheet" href="main.css"/>

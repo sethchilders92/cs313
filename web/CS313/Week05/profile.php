@@ -3,18 +3,10 @@
 require "dbconnect.php";
 $db = get_db();
 
-//if($_POST['username'] == 'sethchilders92') {
-//    $id = 1;
-//} else
-//    $id = 2;
-
 $username = $_POST['username'];
 $password = $_POST['password'];
-//
-//echo "Username: $username";
-//echo "Password: $password";
 
-$userInfo = 'SELECT * FROM person WHERE username= :username AND password= :password';
+$userInfo = 'SELECT id, username, password FROM person WHERE username= :username AND password= :password';
 
 $statement = $db->prepare($userInfo);
 $statement->bindValue(':username', $username);
@@ -24,18 +16,14 @@ $statement->execute();
 $row = $statement->fetch(PDO::FETCH_ASSOC);  
 $statement->closeCursor();
 
-
-
 $id = $row['id'];
 
-//echo "ID: $id";
-$sql = 'SELECT * FROM profile WHERE id= :id';
+$sql = 'SELECT id, firstname, lastname, description FROM profile WHERE id= :id';
 $statement2 = $db->prepare($sql);
 $statement2->bindValue(':id', $id);
 $statement2->execute();
 $row2 = $statement2->fetch(PDO::FETCH_ASSOC);
 $statement2->closeCursor();
-//echo "Here's the id: " . $id;
 
 ?>      
 

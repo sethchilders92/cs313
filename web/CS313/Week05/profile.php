@@ -20,7 +20,7 @@ $password = $_POST['password'];
 
 //$id = $row['id'];
 
-$sql = "SELECT * FROM profile WHERE id=$id";
+$sql = "SELECT * FROM profile WHERE id=1";
 $statement2 = $db->prepare($sql);
 $statement2->execute();
 $row2 = $statement2->fetch(PDO::FETCH_ASSOC);

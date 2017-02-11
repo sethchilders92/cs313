@@ -14,13 +14,13 @@ $password = $_POST['password'];
 //echo "Username: $username";
 //echo "Password: $password";
 
-$row = 'SELECT * FROM person WHERE username= :username';
+$userInfo = 'SELECT * FROM person WHERE username= :username';
 
-$statement = $db->prepare($row);
+$statement = $db->prepare($userInfo);
 $statement->bindValue(':username', $username);
 $statement->execute();
 // //Go through each result
-//$row = $statement->fetch(PDO::FETCH_ASSOC);  
+$row = $statement->fetch(PDO::FETCH_ASSOC);  
 
 //$id = $row['id'];
 //$sql = "SELECT * FROM profile WHERE id=$id";

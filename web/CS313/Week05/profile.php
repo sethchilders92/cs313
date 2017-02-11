@@ -43,7 +43,7 @@ $statement2->closeCursor();
     <head>
         <title>
             <?php 
-//                echo "General Profile | " . $row2['firstname'] . " " . $row2['lastname'];
+                echo "General Profile | " . $row2['firstname'] . " " . $row2['lastname'];
             ?>
             </title>
         <link type="text/css" rel="stylesheet" href="main.css"/>
@@ -51,22 +51,20 @@ $statement2->closeCursor();
     <body> 
        
         
-<!--
         <div class="container">
             <img class="background" src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRLYse2XyJuK0MfQWeNpTkyliPUkcLOJMMon36q-zrtEAW4T2oq" width="100%">
         <img class="profilePic" src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSM7ht8eWmGu6BSM6J43Kn4s2qGzezX40KNmhS60-CMXsUMZ0MzLw"/>
             <h1 class="name"><?php 
-                    //echo $row2['firstname'] . " " . $row2['lastname'];
+                    echo $row2['firstname'] . " " . $row2['lastname'];
                 ?></h1>
         <div class="description">
             <h4>Description</h4>
             <p><?php 
-               //     echo 
-                 //   echo $row2['description'];
+                    echo 
+                    echo $row2['description'];
                 ?></p>
             </div>
         </div>
--->
     </body>
 </html>
 

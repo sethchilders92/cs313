@@ -59,8 +59,7 @@ $statement2->closeCursor();
                 ?></h1>
         <div class="description">
             <h4>Description</h4>
-            <p><?php 
-                    echo 
+            <p><?php  
                     echo $row2['description'];
                 ?></p>
             </div>

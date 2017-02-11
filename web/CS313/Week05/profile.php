@@ -5,25 +5,38 @@ $db = get_db();
 
 $username = $_POST['username'];
 $password = $_POST['password'];
+try {
+    $userInfo = 'SELECT id, username, password FROM person WHERE username= :username AND password= :password';
 
-$userInfo = 'SELECT id, username, password FROM person WHERE username= :username AND password= :password';
+    $statement = $db->prepare($userInfo);
+    $statement->bindValue(':username', $username);
+    $statement->bindValue(':password', $password);
+    $statement->execute();
 
-$statement = $db->prepare($userInfo);
-$statement->bindValue(':username', $username);
-$statement->bindValue(':password', $password);
-$statement->execute();
-// //Go through each result
-$row = $statement->fetch(PDO::FETCH_ASSOC);  
-$statement->closeCursor();
+    //Go through each result
+    $row = $statement->fetch(PDO::FETCH_ASSOC);  
+    $statement->closeCursor();
+    $id = $row['id'];
+    
+} catch (PDOException $e) {
+    $error_message = $e->getMessage();
+    echo "<p>Database error: $error_message </p>";
+    exit();
+}
+try {
+    $sql = 'SELECT id, firstname, lastname, description FROM profile WHERE id= :id';
+    $statement2 = $db->prepare($sql);
+    $statement2->bindValue(':id', $id);
+    $statement2->execute();
+    $row2 = $statement2->fetch(PDO::FETCH_ASSOC);
+    $statement2->closeCursor();
+    
+} catch (PDOException $e) {
+    $error_message = $e->getMessage();
+    echo "<p>Database error: $error_message </p>";
+    exit();
+}
 
-$id = $row['id'];
-
-$sql = 'SELECT id, firstname, lastname, description FROM profile WHERE id= :id';
-$statement2 = $db->prepare($sql);
-$statement2->bindValue(':id', $id);
-$statement2->execute();
-$row2 = $statement2->fetch(PDO::FETCH_ASSOC);
-$statement2->closeCursor();
 
 ?>      
 

@@ -11,7 +11,7 @@ $db = get_db();
 $username = $_POST['username'];
 $password = $_POST['password'];
 
-$userInfo = "SELECT * FROM person WHERE username=$username AND password=$password";
+$userInfo = "SELECT * FROM person WHERE username=$username";
 
 $statement = $db->prepare($userInfo);
 $statement->execute();

@@ -16,7 +16,7 @@ $userInfo = "SELECT * FROM person WHERE username=$username";
 $statement = $db->prepare($userInfo);
 $statement->execute();
 // Go through each result
-$row = $statement->fetch(PDO::FETCH_ASSOC);  
+//$row = $statement->fetch(PDO::FETCH_ASSOC);  
 
 //$id = $row['id'];
 

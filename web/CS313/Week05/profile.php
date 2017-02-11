@@ -1,5 +1,5 @@
 <?php
-/* Taken From Instructor Solution to Team Assignment Week 05*/
+/* Parts taken From Instructor Solution to Team Assignment Week 05*/
 require "dbconnect.php";
 $db = get_db();
 
@@ -54,16 +54,17 @@ try {
        
         <div class="container">
             <img class="background" src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRLYse2XyJuK0MfQWeNpTkyliPUkcLOJMMon36q-zrtEAW4T2oq" width="100%">
-        <img class="profilePic" src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSM7ht8eWmGu6BSM6J43Kn4s2qGzezX40KNmhS60-CMXsUMZ0MzLw"/>
+            <img class="profilePic" src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSM7ht8eWmGu6BSM6J43Kn4s2qGzezX40KNmhS60-CMXsUMZ0MzLw"/>
             <h1 class="name"><?php 
                     echo $row2['firstname'] . " " . $row2['lastname'];
                 ?></h1>
-        <div class="description">
+            <div class="description">
             <h4>Description</h4>
             <p><?php  
                     echo $row2['description'];
                 ?></p>
             </div>
+            <input type="submit" action="editProfile.html" name="editProfile"/>
         </div>
     </body>
 </html>

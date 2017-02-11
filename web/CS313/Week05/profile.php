@@ -3,10 +3,10 @@
 require "dbconnect.php";
 $db = get_db();
 
-//if($_POST['username'] == 'sethchilders92') {
-//    $id = 1;
-//} else
-//    $id = 2;
+if($_POST['username'] == 'sethchilders92') {
+    $id = 1;
+} else
+    $id = 2;
 
 $username = $_POST['username'];
 $password = $_POST['password'];
@@ -18,7 +18,7 @@ $statement->execute();
 // Go through each result
 $row = $statement->fetch(PDO::FETCH_ASSOC);  
 
-$id = $row['id'];
+//$id = $row['id'];
 
 $sql = "SELECT * FROM profile WHERE id=$id";
 $statement2 = $db->prepare($sql);

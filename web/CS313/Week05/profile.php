@@ -10,14 +10,14 @@ $db = get_db();
 
 $username = $_POST['username'];
 $password = $_POST['password'];
-
-echo "Username: $username";
-echo "Password: $password";
+//
+//echo "Username: $username";
+//echo "Password: $password";
 
 //$userInfo = "SELECT * FROM person WHERE username=$username";
 
-//$statement = $db->prepare("SELECT * FROM person WHERE username=$username");
-//$statement->execute();
+$statement = $db->prepare("SELECT * FROM person WHERE username='sethchilders92'");
+$statement->execute();
 // //Go through each result
 //$row = $statement->fetch(PDO::FETCH_ASSOC);  
 

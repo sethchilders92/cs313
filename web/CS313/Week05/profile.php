@@ -28,7 +28,7 @@ $statement->closeCursor();
 $id = $row['id'];
 
 //echo "ID: $id";
-$sql = "SELECT * FROM profile WHERE id=$id";
+$sql = 'SELECT * FROM profile WHERE id= :id';
 $statement2 = $db->prepare($sql);
 $statement2->bindValue(':id', $id);
 $statement2->execute();

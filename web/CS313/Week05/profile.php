@@ -11,12 +11,12 @@ if($_POST['username'] == 'sethchilders92') {
 $username = $_POST['username'];
 $password = $_POST['password'];
 
-//$userInfo = "SELECT * FROM person WHERE username=$username";
-//
-//$statement = $db->prepare($userInfo);
-//$statement->execute();
-//// Go through each result
-//$row = $statement->fetch(PDO::FETCH_ASSOC);  
+$userInfo = "SELECT * FROM person WHERE username=$username";
+
+$statement = $db->prepare($userInfo);
+$statement->execute();
+// Go through each result
+$row = $statement->fetch(PDO::FETCH_ASSOC);  
 
 //$id = $row['id'];
 

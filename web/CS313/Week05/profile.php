@@ -11,20 +11,23 @@ $db = get_db();
 $username = $_POST['username'];
 $password = $_POST['password'];
 
+echo "Username: $username";
+echo "Password: $password";
+
 //$userInfo = "SELECT * FROM person WHERE username=$username";
 
-$statement = $db->prepare("SELECT * FROM person WHERE username=$username");
-$statement->execute();
- //Go through each result
-$row = $statement->fetch(PDO::FETCH_ASSOC);  
+//$statement = $db->prepare("SELECT * FROM person WHERE username=$username");
+//$statement->execute();
+// //Go through each result
+//$row = $statement->fetch(PDO::FETCH_ASSOC);  
 
-$id = $row['id'];
+//$id = $row['id'];
 //
 //$sql = "SELECT * FROM profile WHERE id=$id";
 //$statement2 = $db->prepare($sql);
 //$statement2->execute();
 //$row2 = $statement2->fetch(PDO::FETCH_ASSOC);
-echo "Here's the id: " . $id;
+//echo "Here's the id: " . $id;
 
 ?>      
 

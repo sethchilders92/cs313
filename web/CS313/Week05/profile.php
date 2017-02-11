@@ -22,7 +22,12 @@ $statement->execute();
 // //Go through each result
 $row = $statement->fetch(PDO::FETCH_ASSOC);  
 $statement->closeCursor();
-//$id = $row['id'];
+
+
+
+$id = $row['id'];
+
+echo "ID: $id";
 //$sql = "SELECT * FROM profile WHERE id=$id";
 //$statement2 = $db->prepare($sql);
 //$statement2->execute();

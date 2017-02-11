@@ -20,7 +20,7 @@ $row = $statement->fetch(PDO::FETCH_ASSOC);
 
 $id = $row['id'];
 
-$sql = "SELECT * FROM profile WHERE firstname='Seth'";
+$sql = "SELECT * FROM profile WHERE id=$id";
 $statement2 = $db->prepare($sql);
 $statement2->execute();
 $row2 = $statement2->fetch(PDO::FETCH_ASSOC);
@@ -33,7 +33,7 @@ $row2 = $statement2->fetch(PDO::FETCH_ASSOC);
     <head>
         <title>
             <?php 
-                echo "General Profile | " . $row['firstname'] . " " . $row['lastname'];
+                echo "General Profile | " . $row2['firstname'] . " " . $row2['lastname'];
             ?>
             </title>
         <link type="text/css" rel="stylesheet" href="main.css"/>
@@ -45,12 +45,12 @@ $row2 = $statement2->fetch(PDO::FETCH_ASSOC);
             <img class="background" src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRLYse2XyJuK0MfQWeNpTkyliPUkcLOJMMon36q-zrtEAW4T2oq" width="100%">
         <img class="profilePic" src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSM7ht8eWmGu6BSM6J43Kn4s2qGzezX40KNmhS60-CMXsUMZ0MzLw"/>
             <h1 class="name"><?php 
-                    echo $row['firstname'] . " " . $row['lastname'];
+                    echo $row2['firstname'] . " " . $row2['lastname'];
                 ?></h1>
         <div class="description">
             <h4>Description</h4>
             <p><?php 
-                    echo $row['description'];
+                    echo $row2['description'];
                 ?></p>
             </div>
         </div>

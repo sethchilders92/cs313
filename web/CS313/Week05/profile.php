@@ -14,9 +14,9 @@ $password = $_POST['password'];
 //echo "Username: $username";
 //echo "Password: $password";
 
-//$userInfo = "SELECT * FROM person WHERE username=$username";
+$userInfo = "SELECT * FROM person WHERE username=$username";
 
-$statement = $db->prepare("SELECT * FROM person WHERE username=$username");
+$statement = $db->prepare($userInfo);
 $statement->execute();
 // //Go through each result
 //$row = $statement->fetch(PDO::FETCH_ASSOC);  

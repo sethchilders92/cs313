@@ -3,24 +3,28 @@
 require "dbconnect.php";
 $db = get_db();
 
-if($_POST['username'] == 'sethchilders92') {
-    $id = 1;
-} else
-    $id = 2;
+//if($_POST['username'] == 'sethchilders92') {
+//    $id = 1;
+//} else
+//    $id = 2;
 
 $username = $_POST['username'];
 $password = $_POST['password'];
 
-$sql = "SELECT * FROM profile WHERE id=$id";
+$userInfo = "SELECT * FROM person WHERE username=$username AND password=$password";
 
-$statement = $db->prepare($sql);
-//$statement2 = $db->prepare("if exists (SELECT username, password, id FROM person WHERE username=$username, password=$password) then end if");
-
+$statement = $db->prepare($userInfo);
 $statement->execute();
-//$statement2->execute();
 // Go through each result
-$row = $statement->fetch(PDO::FETCH_ASSOC);
-//$row2 = $statement2->fetch(PDO::FETCH_ASSOC);  
+$row = $statement->fetch(PDO::FETCH_ASSOC);  
+
+$id = $row['id'];
+
+$sql = "SELECT * FROM profile WHERE id=$id";
+$statement2 = $db->prepare($sql);
+$statement2->execute();
+$row2 = $statement2->fetch(PDO::FETCH_ASSOC);
+
 
 ?>      
 

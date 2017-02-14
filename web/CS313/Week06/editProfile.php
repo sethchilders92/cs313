@@ -1,5 +1,5 @@
 <?php
-/* Parts taken From Instructor Solution to Team Assignment Week 05*/
+/* Parts taken From Instructor Solution to "Team Assignment Week 05" */
 require "dbconnect.php";
 $db = get_db();
 
@@ -32,7 +32,6 @@ try {
 }
 
 if ($firstname != '') {
-    echo "Firstname should be updated to $firstname";
     try {
         $firstnameSQL = 'UPDATE profile SET firstname= :firstname WHERE id= :id';
 
@@ -51,7 +50,6 @@ if ($firstname != '') {
 }
 
 if ($lastname != '') {
-    echo "Lastname should be updated";
     try {
         $lastnameSQL = 'UPDATE profile SET lastname= :lastname WHERE id= :id';
 
@@ -70,7 +68,6 @@ if ($lastname != '') {
 }
 
 if ($profilepic != '') {
-    echo "Profilepic should be updated";
     try {
         $profilepicSQL = 'UPDATE profile SET profilepic= :profilepic WHERE id= :id';
 
@@ -89,7 +86,6 @@ if ($profilepic != '') {
 }
 
 if ($backgroundpic != '') {
-    echo "backgroundpic should be updated";
     try {
         $backgroundpicSQL = 'UPDATE profile SET backgroundpic= :backgroundpic WHERE id= :id';
 
@@ -108,7 +104,6 @@ if ($backgroundpic != '') {
 }
 
 if ($description != '') {
-    echo "Description should be updated";
     try {
         $descriptionSQL = 'UPDATE profile SET description= :description WHERE id= :id';
 

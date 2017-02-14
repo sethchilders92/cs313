@@ -110,7 +110,7 @@ if ($backgroundpic != '') {
 if ($description != '') {
     echo "Description should be updated";
     try {
-        $descriptionSQL = 'UPDATE profile SET lastname= :lastname WHERE id= :id';
+        $descriptionSQL = 'UPDATE profile SET description= :description WHERE id= :id';
 
         $statement6 = $db->prepare($descriptionSQL);
         $statement6->bindValue(':id', $id);

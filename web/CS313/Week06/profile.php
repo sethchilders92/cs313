@@ -5,6 +5,9 @@ $db = get_db();
 
 $username = $_POST['username'];
 $password = $_POST['password'];
+
+$address = 'https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRLYse2XyJuK0MfQWeNpTkyliPUkcLOJMMon36q-zrtEAW4T2oq';
+
 try {
     $userInfo = 'SELECT id, username, password FROM person WHERE username= :username AND password= :password';
 
@@ -24,7 +27,7 @@ try {
     exit();
 }
 try {
-    $sql = 'SELECT id, firstname, lastname, description FROM profile WHERE id= :id';
+    $sql = 'SELECT id, firstname, lastname, description, backgroundpic, profilepic FROM profile WHERE id= :id';
     $statement2 = $db->prepare($sql);
     $statement2->bindValue(':id', $id);
     $statement2->execute();
@@ -36,7 +39,6 @@ try {
     echo "<p>Database error: $error_message </p>";
     exit();
 }
-$address = 'https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRLYse2XyJuK0MfQWeNpTkyliPUkcLOJMMon36q-zrtEAW4T2oq';
 
 ?>      
 
@@ -54,9 +56,11 @@ $address = 'https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRLYse2XyJuK0Mf
        
         <div class="container">
             <?php 
-            echo '<img class="background" src="' . $address . '" width="100%">'; 
+            echo '<img class="background" src="' . $row2['backgroundpic'] . '" width="100%"/>'; 
+            
+            echo '<img class="profilePic" src="' . $row2['profilepic'] . '"/>'
             ?>
-            <img class="profilePic" src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSM7ht8eWmGu6BSM6J43Kn4s2qGzezX40KNmhS60-CMXsUMZ0MzLw"/>
+<!--            <img class="profilePic" src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSM7ht8eWmGu6BSM6J43Kn4s2qGzezX40KNmhS60-CMXsUMZ0MzLw"/>-->
             <h1 class="name"><?php 
                     echo $row2['firstname'] . " " . $row2['lastname'];
                 ?></h1>

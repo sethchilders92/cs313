@@ -69,17 +69,55 @@ if ($lastname != '') {
     }
 }
 
+if ($profilepic != '') {
+    echo "Profilepic should be updated";
+    try {
+        $profilepicSQL = 'UPDATE profile SET profilepic= :profilepic WHERE id= :id';
+
+        $statement4 = $db->prepare($profilepicSQL);
+        $statement4->bindValue(':id', $id);
+        $statement4->bindValue(':profilepic', $profilepic);
+        $statement4->execute();
+        $row4 = $statement4->fetch(PDO::FETCH_ASSOC);
+        $statement4->closeCursor();
+    
+    } catch (PDOException $e) {
+        $error_message = $e->getMessage();
+        echo "<p>Database error: $error_message </p>";
+        exit();
+    }
+}
+
+if ($backgroundpic != '') {
+    echo "backgroundpic should be updated";
+    try {
+        $backgroundpicSQL = 'UPDATE profile SET backgroundpic= :backgroundpic WHERE id= :id';
+
+        $statement5 = $db->prepare($backgroundpicSQL);
+        $statement5->bindValue(':id', $id);
+        $statement5->bindValue(':backgroundpic', $backgroundpic);
+        $statement5->execute();
+        $row5 = $statement5->fetch(PDO::FETCH_ASSOC);
+        $statement5->closeCursor();
+    
+    } catch (PDOException $e) {
+        $error_message = $e->getMessage();
+        echo "<p>Database error: $error_message </p>";
+        exit();
+    }
+}
+
 if ($description != '') {
     echo "Description should be updated";
     try {
         $descriptionSQL = 'UPDATE profile SET lastname= :lastname WHERE id= :id';
 
-        $statement4 = $db->prepare($descriptionSQL);
-        $statement4->bindValue(':id', $id);
-        $statement4->bindValue(':description', $description);
-        $statement4->execute();
-        $row4 = $statement4->fetch(PDO::FETCH_ASSOC);
-        $statement4->closeCursor();
+        $statement6 = $db->prepare($descriptionSQL);
+        $statement6->bindValue(':id', $id);
+        $statement6->bindValue(':description', $description);
+        $statement6->execute();
+        $row6 = $statement6->fetch(PDO::FETCH_ASSOC);
+        $statement6->closeCursor();
     
     } catch (PDOException $e) {
         $error_message = $e->getMessage();

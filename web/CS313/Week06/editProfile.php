@@ -32,6 +32,7 @@ try {
 }
 
 if ($firstname != '') {
+    echo "Firstname should be updated";
     try {
         $firstnameSQL = 'UPDATE profile SET firstname= :firstname WHERE id= :id';
 
@@ -50,6 +51,7 @@ if ($firstname != '') {
 }
 
 if ($lastname != '') {
+    echo "Lastname should be updated";
     try {
         $lastnameSQL = 'UPDATE profile SET lastname= :lastname WHERE id= :id';
 

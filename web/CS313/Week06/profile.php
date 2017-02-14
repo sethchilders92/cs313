@@ -53,9 +53,11 @@ try {
         <link type="text/css" rel="stylesheet" href="main.css"/>
     </head>
     <body> 
-       
         <div class="container">
             <?php 
+            echo $row2['backgroundpic'];
+            echo $row2['profilepic'];
+            
             echo '<img class="background" src="' . $row2['backgroundpic'] . '" width="100%"/>'; 
             
             echo '<img class="profilePic" src="' . $row2['profilepic'] . '"/>'

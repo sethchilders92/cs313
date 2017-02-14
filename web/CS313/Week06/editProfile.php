@@ -31,7 +31,7 @@ try {
     exit();
 }
 
-if ($firstname == '') {
+if ($firstname != '') {
     echo "Firstname should be updated to $firstname";
     try {
         $firstnameSQL = 'UPDATE profile SET firstname= :firstname WHERE id= :id';

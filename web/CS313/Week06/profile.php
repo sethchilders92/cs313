@@ -54,7 +54,8 @@ $address = 'https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRLYse2XyJuK0Mf
        
         <div class="container">
             <?php 
-            echo "<img class="background" src="$address" width="100%">";
+            echo '<img class="background" src="' . $address . '" width="100%">'; 
+            ?>
             <img class="profilePic" src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSM7ht8eWmGu6BSM6J43Kn4s2qGzezX40KNmhS60-CMXsUMZ0MzLw"/>
             <h1 class="name"><?php 
                     echo $row2['firstname'] . " " . $row2['lastname'];

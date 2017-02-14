@@ -69,6 +69,25 @@ if ($lastname != '') {
     }
 }
 
+if ($description != '') {
+    echo "Description should be updated";
+    try {
+        $descriptionSQL = 'UPDATE profile SET lastname= :lastname WHERE id= :id';
+
+        $statement4 = $db->prepare($descriptionSQL);
+        $statement4->bindValue(':id', $id);
+        $statement4->bindValue(':description', $description);
+        $statement4->execute();
+        $row4 = $statement4->fetch(PDO::FETCH_ASSOC);
+        $statement4->closeCursor();
+    
+    } catch (PDOException $e) {
+        $error_message = $e->getMessage();
+        echo "<p>Database error: $error_message </p>";
+        exit();
+    }
+}
+
 ?>      
 
 <!DOCTYPE html>

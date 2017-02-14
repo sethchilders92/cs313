@@ -32,7 +32,7 @@ try {
 }
 
 if ($firstname == '') {
-    echo "Firstname should be updated";
+    echo "Firstname should be updated to $firstname";
     try {
         $firstnameSQL = 'UPDATE profile SET firstname= :firstname WHERE id= :id';
 

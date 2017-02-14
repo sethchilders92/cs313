@@ -58,9 +58,9 @@ try {
             echo $row2['backgroundpic'];
             echo $row2['profilepic'];
             
-            echo '<img class="background" src=" $row2["backgroundpic"]" width="100%"/>'; 
-            
-            echo '<img class="profilePic" src="' . $row2['profilepic'] . '"/>'
+//            echo '<img class="background" src=" $row2["backgroundpic"]" width="100%"/>'; 
+//            
+//            echo '<img class="profilePic" src="' . $row2['profilepic'] . '"/>'
             ?>
 <!--            <img class="profilePic" src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSM7ht8eWmGu6BSM6J43Kn4s2qGzezX40KNmhS60-CMXsUMZ0MzLw"/>-->
             <h1 class="name"><?php 

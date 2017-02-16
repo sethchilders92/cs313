@@ -1,0 +1,37 @@
+After completing the assignment, please answer the questions in this text file and submit it to I-Learn.
+
+1. Copy and paste the URL for your web application:
+    https://sheltered-mountain-47766.herokuapp.com/CS313/Week05/form.html 
+
+2. Copy and paste the URL for your source code repository (e.g., GitHub):
+    https://github.com/sethchilders92/cs313/tree/master/web/CS313/Week05 
+
+3. Briefly list and describe the elements of the application that are functioning. Include any special instructions about how to login and/or use your application.
+    Project Title: General Profile
+    
+    1. User first and last name: They will be able to change this next week.
+    2. Description of user: They will be able to change this next week.
+    3. Login info using users' username and password: They could have the option to 
+    change this, perhaps I should incorporate it.
+    4. Info update form: They will be able to submit their revised information next week. 
+    For now, this is not functional and is just a form that submits to a blank php file.
+
+4. Briefly describe any pieces of the assignment that are not yet working correctly.
+        All elements are functioning except for the updating of the data, which is now 
+        setup for next week's assignment. 
+
+5. Briefly describe the "coolest" thing you learned while completing this assignment.
+    I learned how to bind variables in PHP to use them in SQL queries. I also learned 
+    how to make a real login page! I didn't know that it was next week's assignment, 
+    thinking I had to use all of my database's information.
+
+6. Why should you create a separate user account for your application to access the database?
+    I should probably have administrative rights on my account, but I should also be 
+    able to customize my information and make it different from a different user's 
+    information.
+
+7. Please select the category you feel best describes your assignment:
+    D - Meets requirements
+
+8. Provide a brief justification (1-2 sentences) for selecting that category.
+    Although I think I went above and beyond with this assignment with the login page and update user profile form, the assignment is late. Thank you for letting me turn it in late and catch up!

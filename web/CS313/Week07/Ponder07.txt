@@ -1,0 +1,61 @@
+After completing the assignment, please answer the questions in this text file and submit it to I-Learn.
+
+1. Project Title / One sentence description:
+    General Profile: My project was to build the general layout of a user profile that could be used for any given website.
+
+2. Copy and paste the URL for your web application:
+    https://sheltered-mountain-47766.herokuapp.com/CS313/Week07/form.html 
+
+3. Copy and paste the URL for your source code repository (e.g., GitHub):
+    https://github.com/sethchilders92/cs313/tree/master/web/CS313/Week07 
+
+4. Please provide a brief description of what your project does and how to use the application. Make sure to include any required information such as a username/password if necessary.
+    My web application is a general user profile with username and password login, and the capability to modify the user
+    content from within the profile. This is a general profile for any given website and is not meant to be viewed by 
+    anyone but the owner.
+
+5. Briefly describe any pieces of the assignment that are not yet working correctly.
+    Everything is working correctly, but if I had more time I would add the ability to "Sign up" or create a new user
+    profile, and I would hash my password.
+
+6. Provide evidence of your database design by dumping the SQL that describes your Heroku database to the file "output.sql" using the following command. Submit this SQL file in addition to the submission file for this assignment.
+    
+
+  $ heroku run 'pg_dump $DATABASE_URL' > output.sql
+
+--------------------------------
+Project Self-assessment
+--------------------------------
+
+For the each of the following criteria, please state which category you feel best describes your work and give a 1-2 sentence justification for each. The categories are:
+
+A - Some attempt was made
+B - Developing, but significantly deficient
+C - Slightly deficient, but still mostly adequate
+D - Meets requirements
+E - Shows creativity and excels above and beyond requirements
+
+1. Professional look and feel
+    E - I did my best to add simple, yet applicable CSS to my project, making it look nice. It is not a full
+    profile, so it does not look full on the page, but I did my best to make it professional.
+2. Accomplishes a meaningful/interesting task
+    E - A general user profile is very useful and is something I hope to expand later on and be able to apply
+    to future websites/ applications for a more rich user experience.
+3. Demonstrates good database design principles
+    E - My database has multiple tables, splitting up the information professionally and in a modular way. It
+    uses primary keys and foreign keys, and only contains useful data in it's correct form, using NULL and 
+    NOT NULL properly.
+4. Demonstrates skill in database retrieval
+    E - I am able to access all the information in my database successfully and display it to the screen in a 
+    meaningful and useful way, as seen in my web application.
+5. Demonstrates skill in database modification
+    E - I am able to not only access the information, but modify it through a form as seen in my web application.
+    It does so with proper validation, making it fairly (though not fully due to my lack of experience) secure.
+6. Demonstrates mastery of client-side/server-side coordination and communication.
+    D - I think I could have probably made many of the execute statements combine into one, though I did not have 
+    time to learn how to. This is something I hope to continue to learn and apply to not only this application, but
+    others as well.
+7. Overall Project
+    E - I am very proud of the outcome of my project, it being fairly professional in style and in code. I am 
+    excited to use what I have created and learned in other areas of web development and am pleased with the 
+    effort put into the project and the final outcome of such efforts.

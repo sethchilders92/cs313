@@ -26,6 +26,9 @@
 h1 {
     text-align: center;
 }
-.description {
+.description p {
     border: 1px solid grey;
+}
+.container {
+    align-content: center;
 }

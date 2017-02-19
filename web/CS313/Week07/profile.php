@@ -52,6 +52,7 @@ try {
     </head>
     <body> 
         <div class="container">
+            <div class="contained">
             <?php 
             echo '<img class="background" src="' . $row2['backgroundpic'] . '" width="100%"/>'; 
             
@@ -70,6 +71,7 @@ try {
             <form action="editProfile.html">
                 <input type="submit"  value="Edit Profile"/>
             </form>
+            </div>
         </div>
     </body>
 </html>

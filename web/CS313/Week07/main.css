@@ -1,0 +1,26 @@
+.name {
+    position: absolute;
+    top: 250px;
+    left: 220px;
+    color: white;
+}
+.background {
+    height: 300px; 
+}
+.profilePic {
+    position: absolute;
+    top: 100px; 
+    left: 12px;
+    height: 200px;
+}
+.editProfile {
+    display: flex;
+    justify-content: center;
+    flex-flow: column nowrap;
+    align-content: center;
+    width: 300px;
+    margin: 0 auto;
+}
+h1 {
+    text-align: center;
+}

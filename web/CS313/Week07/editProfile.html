@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>Edit Desktop</title>
+        <link type="text/css" rel="stylesheet" href="main.css"/>
+    </head>
+    <body>
+        <h1>Edit Profile</h1>
+        <hr>
+        <form class="editProfile" method="post" action="editProfile.php">
+            <h3>Input your Username and Password in order to change profile settings</h3>
+            Username:
+            <input name="username" type="text" required/>
+            Password:
+            <input name="password" type="password" required/>
+            <hr>
+            First name: <input type="text" name="firstname" size="auto"/>
+            Last name: <input type="text" name="lastname" size="auto" />
+            <br/>
+            Profile Picture: <input type="text" name="profilepic" size="auto" placeholder="Image Address (URL)"/>
+            <br/>
+            Background Picture: <input type="text" name="backgroundpic" size="auto" placeholder="Image Address (URL)"/>
+            <br/>
+            Description: <textarea name="description" cols="50" rows="4"></textarea>
+            <br/>
+            <input type="submit"/>
+        </form>
+        <hr>
+    </body>
+</html>

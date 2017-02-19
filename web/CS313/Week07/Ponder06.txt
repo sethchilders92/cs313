@@ -1,0 +1,62 @@
+After completing the assignment, please answer the questions in this text file and submit it to I-Learn.
+
+1. Copy and paste the URL for your web application:
+    
+    https://sheltered-mountain-47766.herokuapp.com/CS313/Week06/form.html?
+
+2. Copy and paste the URL for your source code repository (e.g., GitHub):
+    https://github.com/sethchilders92/cs313/tree/master/web/CS313/Week06
+
+3. Briefly list and describe the elements of the application that are functioning. Include any special instructions about how to login and/or use your application.
+
+    All parts of the application are working. 
+    
+    Login page: the three already created users' information is 
+    on the page to allow access and modification
+    
+    Edit Profile Button: This works and takes the user to an 
+    editting page.
+    
+    Editting page: Everything works properly on this page, 
+    granted legitimate URLs are used for the images and not
+    file locations or images that have copywrite protection.
+
+4. Briefly describe any pieces of the assignment that are not yet working correctly.
+
+    Everything is working properly, though I am hoping to add
+    another button on the login page to allow new users to be
+    created. I am also hoping to better the CSS, especially
+    the background image CSS seeing as it stretches most images
+    that are used. I might use a @media query to do so, or
+    I might put a max-width on the image and center the content
+    on the page.
+
+5. Briefly describe the "coolest" thing you learned while completing this assignment.
+
+    The coolest thing is that I learned how to make a miniature
+    social media page! I hope to be able to continue this 
+    project and allow for searching the database for other 
+    users, and allow for users to be connected and see each 
+    other's profiles, with certain permissions set. 
+
+6. What is a benefit of having a foreign key constraint?
+    
+    It allows you to link tables more easily, as I did in this 
+    assignment. I used the ID primary key from my "person" 
+    table and made it a foreign key in my "profile" table, 
+    allowing me to keep, use, and modify the user's information 
+    that is housed in both tables, similateously.
+
+7. Please select the category you feel best describes your assignment:
+
+    D - Meets requirements
+
+8. Provide a brief justification (1-2 sentences) for selecting that category.
+
+    While I am very proud of what I have been able to
+    accomplish, I am turning this in a few days late. I also 
+    think I could optimize my code more in my "profile.php", 
+    having repeated much of the database querying when I might
+    be able to do so with fewer "executions". I met all of the 
+    requirements and tried to make my application useful for 
+    future projects and hope to continue with this project.

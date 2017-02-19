@@ -9,18 +9,18 @@
         <form class="editProfile" method="post" action="editProfile.php">
             <h3>Input your Username and Password in order to change profile settings</h3>
             Username:
-            <input name="username" type="text" required/>
+            <input name="username" type="text" maxlength="30" required/>
             Password:
-            <input name="password" type="password" required/>
+            <input name="password" type="password" maxlength="30" required/>
             <hr>
-            First name: <input type="text" name="firstname" size="auto"/>
-            Last name: <input type="text" name="lastname" size="auto" />
+            First name: <input type="text" name="firstname" size="auto" maxlength="30" />
+            Last name: <input type="text" name="lastname" size="auto" maxlength="30" />
             <br/>
-            Profile Picture: <input type="text" name="profilepic" size="auto" placeholder="Image Address (URL)"/>
+            Profile Picture: <input type="text" name="profilepic" size="auto" placeholder="Image Address (URL)" maxlength="500" />
             <br/>
-            Background Picture: <input type="text" name="backgroundpic" size="auto" placeholder="Image Address (URL)"/>
+            Background Picture: <input type="text" name="backgroundpic" size="auto" placeholder="Image Address (URL)" maxlength="500" />
             <br/>
-            Description: <textarea name="description" cols="50" rows="4"></textarea>
+            Description: <textarea name="description" cols="50" rows="4" maxlength="160"></textarea>
             <br/>
             <input type="submit"/>
         </form>

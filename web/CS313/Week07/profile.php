@@ -6,8 +6,6 @@ $db = get_db();
 $username = $_POST['username'];
 $password = $_POST['password'];
 
-$address = 'https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRLYse2XyJuK0MfQWeNpTkyliPUkcLOJMMon36q-zrtEAW4T2oq';
-
 try {
     $userInfo = 'SELECT id, username, password FROM person WHERE username= :username AND password= :password';
 
@@ -59,7 +57,7 @@ try {
             
             echo '<img class="profilePic" src="' . $row2['profilepic'] . '"/>'
             ?>
-<!--            <img class="profilePic" src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSM7ht8eWmGu6BSM6J43Kn4s2qGzezX40KNmhS60-CMXsUMZ0MzLw"/>-->
+
             <h1 class="name"><?php 
                     echo $row2['firstname'] . " " . $row2['lastname'];
                 ?></h1>
